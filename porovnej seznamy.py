@@ -23,3 +23,6 @@ elif len(lines2) > len(lines1):
     print("\nSoubor 2 obsahuje další řádky:")
     for line in lines2[len(lines1):]:
         print(line.strip())
+
+with (open(lines1, "w",encoding="utf-8")
+      as file):file.writelines(lines[:-1])
